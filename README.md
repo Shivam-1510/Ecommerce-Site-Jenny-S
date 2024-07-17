@@ -19,6 +19,9 @@ Option to filter and sort products based on various criteria (e.g., price, popul
 Detailed product pages with multiple images, detailed descriptions, and customer reviews.
 Interactive elements such as image zoom and product variations (e.g., size, color).
 
+**Single product page:**
+There is a page that describes the product in more detail. This detailed description page is only available for the first product on every page. When you click on the first product of any page, you will be taken to another page that provides more information about the product.
+
 **Shopping Cart:**
 Users can add products to their shopping cart and view the cart at any time.
 Displays the selected items, their quantities, and the total price.
