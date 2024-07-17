@@ -4,6 +4,7 @@ Link:https://shivam-1510.github.io/Ecommerce-Site-Jenny-S/
 (Use it by disabling the Smart Screen Defender)
 
 **Key Features:**
+
 **Homepage:**
 A visually appealing homepage with a modern design.
 Features a navigation bar for easy access to different sections of the site.
