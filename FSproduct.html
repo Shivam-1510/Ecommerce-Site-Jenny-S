@@ -17,11 +17,11 @@
         <div>
             <ul id="navbar">
                 <li><a  href="index.html">Home</a></li>
-                <li><a href="Clothes.html">Clothes</a></li>
+                <li><a  href="Clothes.html">Clothes</a></li>
                 <li><a href="Electronics.html">Electronics</a></li>
-                <li><a href="Furniture.html">Furniture</a></li>
+                <li><a class="active" href="Furniture.html">Furniture</a></li>
                 <li><a href="Groceries.html">Groceries</a></li>
-                <li><a class="active" href="About.html">About</a></li>
+                <li><a href="About.html">About</a></li>
                 <li><a href="Contact.html">Contact</a></li>
                 <li id="lg-bag"><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
@@ -32,51 +32,28 @@
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
-    <section id="page-header" class="about-header">
-        <h2>#KnowUs</h2>
-        <p>Lorem ipsum dolor sit amet consectetur. </p>
-
-    </section>
-    <section id="about-head" class="section-p1">
-        <img src="images/About/a6.jpg" alt="">
-        <div>
-            <h2>Who We Are?</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex quam vitae deleniti magni recusandae, iure eum tempora adipisci, qui, debitis sequi reiciendis corrupti quia praesentium laborum numquam animi. Necessitatibus vitae harum praesentium suscipit obcaecati ab. Corrupti numquam explicabo fugiat earum sequi, qui, perspiciatis ipsam reiciendis nulla repudiandae alias architecto fuga.</p>
-            <abbr title="">Create stunning images with as much or as little control as you like thanks to a choice of Basic and Creative modes.</abbr>
-            <br><br>
-            <marquee width="100%" scrollamount="5" loop="-1" bgcolor="#ccc">Create stunning images with as much or as little control as you like thanks to a choice of Basic and Creative modes.</marquee>
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="images/Furniture/bed-1.jpg" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="images/Furniture/bed-1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/Furniture/bed-2.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/Furniture/bed-3.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
         </div>
-    </section>
-    <section id="about-app" class="section-p1">
-        <h1>Download Our <a href="#">App</a></h1>
-        <div class="video">
-            <video autoplay muted loop src="images/About/1.mp4"></video>
-        </div>
-    </section>
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="images/Features/f1.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="images/Features/f2.png" alt="">
-            <h6>Online Order</h6>
-        </div>
-        <div class="fe-box">
-            <img src="images/Features/f3.png" alt="">
-            <h6>Save Money</h6>
-        </div>
-        <div class="fe-box">
-            <img src="images/Features/f4.png" alt="">
-            <h6>Promotions</h6>
-        </div>
-        <div class="fe-box">
-            <img src="images/Features/f5.png" alt="">
-            <h6>Happy Sell</h6>
-        </div>
-        <div class="fe-box">
-            <img src="images/Features/f6.png" alt="">
-            <h6>F24/7 Support</h6>
+        <div class="single-pro-details">
+            <h6>Home / Furniture</h6>
+            <h4>Bed</h4>
+            <h2>₹ 38999</h2>
+            <button class="normal">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus voluptate maxime numquam vitae pariatur vel, dolore a in adipisci minus. Sequi doloremque itaque suscipit totam ab, labore sit libero mollitia tempora reprehenderit natus facere quae consequuntur nam quos exercitationem illo officia porro magni veritatis earum fugiat illum animi! Minus, aspernatur?</span>
         </div>
     </section>
     <section id="newsletter"class="section-p1 section-m1" >
@@ -137,7 +114,22 @@
             <p>© 2024, Tech2 ete - HTML CSS Ecommerce Template</p>
         </div>
     </footer>
-
+    <script>
+        var MainImg =document.getElementById("MainImg");
+        var smallimg =document.getElementsByClassName("small-img");
+        smallimg[0].onclick= function(){
+            MainImg.src =smallimg[0].src;
+        }
+        smallimg[1].onclick= function(){
+            MainImg.src =smallimg[1].src;
+        }
+        smallimg[2].onclick= function(){
+            MainImg.src =smallimg[2].src;
+        }
+        smallimg[3].onclick= function(){
+            MainImg.src =smallimg[3].src;
+        }
+    </script>
 </body>
 <script src="script.js"></script>
 </html>

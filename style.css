@@ -1,9 +1,24 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", "sans-serif";
+}
+:root {
+    --bg-color: #ffffff;
+    --text-color: black;
+    --main-color: #f0f0f0;
+    --other-color: #ffc633;
+    --second-color: #616060;
+
+    --h1-font: 5.5rem;
+    --h2-font: 3.5rem;
+    --p-font: 1rem;
 }
 h1{
     font-size: 50px;
@@ -34,6 +49,7 @@ p{
 .section-m1{
     margin: 40px 0;
 }
+
 button.normal{
     font-size: 14px;
     font-weight: 600;
@@ -119,6 +135,101 @@ body{
 .logo{
     width: 100px
 }
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 8%;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+}
+
+.page-header button {
+    border: none;
+    margin: 0 .5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    transition: 0.4s;
+}
+
+.page-header button:focus {
+    cursor: pointer;
+    background-color: var(--second-color);
+    color: white;
+}
+
+.page-header button:hover {
+    cursor: pointer;
+    background-color: var(--second-color);
+    color: white;
+    scale: 1.1;
+}
+
+.hide {
+    display: none;
+}
+.fiterable-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    flex-basis: 300px;
+    padding: 3px;
+    border-radius: 8px;
+    transition: 0.6s;
+}
+
+.card:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.card img {
+    height: 210px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    object-fit: contain;
+
+}
+
+.card-body {
+    padding: 15px 20px 20px;
+}
+
+.card h6 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cart {
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0 0 0;
+}
+
+.cart button {
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: var(--second-color);
+    color: var(--bg-color);
+    transition: 0.4s;
+}
+
+.cart button:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
 
 
 /* Home Page */
@@ -150,6 +261,10 @@ body{
     cursor: pointer;
     font-weight: 700;
     font-size: 15px;
+}
+#hero button a{
+    text-decoration: none;
+    color: #088178;
 }
 #feature{
     display: flex;
@@ -272,6 +387,10 @@ body{
 
 #banner h2 span{
     color: red;
+}
+button a{
+    text-decoration: none;
+    color: black;
 }
 #banner button:hover{
     background: #088178;
@@ -459,39 +578,11 @@ footer .copyright{
     text-align: center;
 }
 
-/* Shope page */
-#page-header{
-    background-image: url(images/Banner/b1.jpg);
-    width: 100%;
-    height: 40vh;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 14px;
-}
-#page-header h2,
-#page-header p{
-    color: white;
-}
-#pagination{
-    text-align: center;
-}
-#pagination a{
-    text-decoration: none;
-    background-color: #088178;
-    padding: 15px 20px;
-    border-radius: 4px;
-    color: white;
-    font-weight: 600;
-}
-#pagination a i{
-    font-size: 16px;
-    font-weight: 600;
+section {
+    background-color: whitesmoke;
 }
 
-/* Single Product */
+/* Sproduct Shirt */
 #prodetails .single-pro-image{
     width: 40%;
     margin-right: 50px;
@@ -542,65 +633,6 @@ footer .copyright{
 }
 
 
-/* Blog Page */
-#page-header.blog-header{
-    background-image: url(images/Banner/b19.jpg);
-}
-#blog{
-    padding: 150px 150px 0 150px;
-}
-#blog .blog-box{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    padding-bottom: 90px;
-}
-#blog .blog-img{
-    width: 50%;
-    margin-right: 40px;
-}
-#blog img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-#blog .blog-details{
-    width: 50%;
-}
-
-#blog .blog-details a{
-    text-decoration: none;
-    font-size: 11px;
-    color: black;
-    font-weight: 700;
-    position: relative;
-    transition: 0.3s;
-}
-#blog .blog-details a::after{
-    content: "";
-    width: 50px;
-    height: 1px;
-    background-color: black;
-    position: absolute;
-    top: 4px;
-    right: -60px;
-}
-#blog .blog-details a:hover{
-    color: #088178;
-}
-#blog .blog-details a:hover::after{
-    background-color: #088178;
-}
-#blog .blog-box h1{
-    position: absolute;
-    top: -40px;
-    left: 0;
-    font-size: 70px;
-    font-weight: 700;
-    color: #c9cbce;
-    z-index: -9;
-}
 /* About Page */
 #page-header.about-header{
     background-image: url(images/About/banner.png);
@@ -628,6 +660,21 @@ footer .copyright{
     width: 100%;
     height: 100%;
     border-radius: 20px;
+}
+#page-header {
+    background-image: url(images/Banner/b1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header h2,
+#page-header p{
+    color: white;
 }
 /* Contact Page */
 #contact-details{
@@ -725,7 +772,7 @@ footer .copyright{
     font-size: 16px;
     font-weight: 600;
     color: #000;
-} 
+}
 /* Cart Page */
 #cart{
     overflow-x: auto;
@@ -825,9 +872,6 @@ footer .copyright{
 
 
 
-
-
-
 @media (max-width:799px){
     .section-p1{
         padding: 40px 40px;
@@ -914,6 +958,14 @@ footer .copyright{
         width: 50%;
     }
 }
+
+
+
+
+
+
+
+
 @media (max-width: 477px){
     #header{
         padding: 10px 30px;
@@ -962,40 +1014,6 @@ footer .copyright{
     footer .copyright{
         text-align: start;
     }
-    /* Single Product */
-    #prodetails{
-        display: flex;
-        flex-direction: column;
-    }
-    #prodetails .single-pro-image {
-        width: 40%;
-        width: 100%;
-        margin-right: 0px;
-    }
-
-    #prodetails  .single-pro-details{
-        width: 100%;
-    }
-    /* Blog Page */
-    #blog{
-        padding: 100px 20px 20px;
-    }
-
-    #blog .blog-box{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    #blog .blog-img{
-        width: 100%;
-        margin-right: 0px;
-        margin-bottom: 30px;
-    }
-    #blog .blog-details{
-        width: 100%;
-    }
-
-    /* About Page */
     #about-head{
         flex-direction: column;
     }
@@ -1028,6 +1046,10 @@ footer .copyright{
     #form-details form{
         width: 100%;
         margin-bottom: 30px;
+    }
+    .filter-buttons{
+        display: flex;
+        flex-direction: row;
     }
     /* cart page */
     #cart-add{
