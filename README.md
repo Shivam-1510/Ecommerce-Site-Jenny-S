@@ -10,6 +10,13 @@ A visually appealing homepage with a modern design.
 Features a navigation bar for easy access to different sections of the site.
 Displays featured products and current promotions.
 
+**Cart Page:**
+Unique Product Identification: Each product added to the cart is assigned a unique identifier, ensuring no overlap even if product IDs are similar across different pages or categories.
+
+Real-Time Cart Management: Users can add, update quantities, and remove items directly from their cart, with changes reflected in real-time and stored persistently using localStorage.
+
+Dynamic Updates: The cart dynamically updates to show accurate quantities and subtotals, providing a seamless shopping experience across different pages and product categories.
+
 **Product Listings:**
 Organized product categories for easier browsing.
 Each product is presented with an image, name, price, and a short description.
