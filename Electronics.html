@@ -12,156 +12,144 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8562ca9bc4.js" crossorigin="anonymous"></script>
 </head>
-<body><section>
-    <section id="header">
-        <a href="#"> <img src="images/logo.png" class="logo" alt=""></a>
-        <div>
-            <ul id="navbar">
-                <li><a  href="index.html">Home</a></li>
-                <li><a  href="Clothes.html">Clothes</a></li>
-                <li><a class="active" href="Electronics.html">Electronics</a></li>
-                <li><a href="Furniture.html">Furniture</a></li>
-                <li><a href="Groceries.html">Groceries</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
-            </ul>
-        </div>
-        <div id="mobile">
-            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-            <i id="bar" class="fas fa-outdent"></i>
-        </div>
+<body>
+    <section>
+        <section id="header">
+            <a href="#"> <img src="images/logo.png" class="logo" alt=""></a>
+            <div>
+                <ul id="navbar">
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a  href="Clothes.html">Clothes</a></li>
+                    <li><a class="active" href="Electronics.html">Electronics</a></li>
+                    <li><a href="Furniture.html">Furniture</a></li>
+                    <li><a href="Groceries.html">Groceries</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+        </section>
+        <section id="page-header">
+            <h2>#Electronix</h2>
+            <p>Save more with coupens & up to 70% off!</p>
+        </section>
+        <section class="electronics" style="background-color: lightgray;" >
+            <div class="page-header">
+                <h1 >Electronics</h1>
+                <div class="filter-buttons">
+                    <button data-name="all">All</button>
+                    <button data-name="laptop">Laptop</button>
+                    <button data-name="speaker">Speaker</button>
+                    <button data-name="headphone">Headphone</button>
+                </div>
+            </div>
+            <div class="fiterable-cards">
+                <div class="card" style="background-color: white;" data-name="laptop" onclick="window.location.href='ESproduct.html'">
+                    <img src="images/Electronics/img-1.jpg" alt="Laptop">
+                    <div class="card-body">
+                        <h6>Laptop</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <div class="cart">
+                            <span class="price">₹ 49999</span>
+                            <button class="add-to-cart" data-id="13" data-name="Laptop" data-price="49999" data-image="images/Electronics/img-1.jpg">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background-color: white;" data-name="speaker">
+                    <img src="images/Electronics/img-2.jpg" alt="Speaker">
+                    <div class="card-body">
+                        <h6>Speaker</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <div class="cart">
+                            <span class="price">₹ 5150</span>
+                            <button class="add-to-cart" data-id="14" data-name="Speaker" data-price="5150" data-image="images/Electronics/img-2.jpg">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background-color: white;" data-name="laptop">
+                    <img src="images/Electronics/img-3.jpg" alt="Laptop">
+                    <div class="card-body">
+                        <h6>Laptop</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <div class="cart">
+                            <span class="price">₹ 152500</span>
+                            <button class="add-to-cart" data-id="15" data-name="Laptop" data-price="152500" data-image="images/Electronics/img-3.jpg">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background-color: white;" data-name="headphone">
+                    <img src="images/Electronics/img-4.jpg" alt="Headphone">
+                    <div class="card-body">
+                        <h6>Headphone</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <div class="cart">
+                            <span class="price">₹ 4550</span>
+                            <button class="add-to-cart" data-id="16" data-name="Headphone" data-price="4550" data-image="images/Electronics/img-4.jpg">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background-color: white;" data-name="headphone">
+                    <img src="images/Electronics/img-5.jpg" alt="Headphone">
+                    <div class="card-body">
+                        <h6>Headphone</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <div class="cart">
+                            <span class="price">₹ 2599</span>
+                            <button class="add-to-cart" data-id="17" data-name="Headphone" data-price="2599" data-image="images/Electronics/img-5.jpg">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background-color: white;" data-name="headphone">
+                    <img src="images/Electronics/img-6.jpg" alt="Headphone">
+                    <div class="card-body">
+                        <h6>Headphone</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <div class="cart">
+                            <span class="price">₹ 3500</span>
+                            <button class="add-to-cart" data-id="18" data-name="Headphone" data-price="3500" data-image="images/Electronics/img-6.jpg">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background-color: white;" data-name="speaker">
+                    <img src="images/Electronics/img-7.jpg" alt="Speaker">
+                    <div class="card-body">
+                        <h6>Speaker</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <div class="cart">
+                            <span class="price">₹ 4999</span>
+                            <button class="add-to-cart" data-id="19" data-name="Speaker" data-price="4999" data-image="images/Electronics/img-7.jpg">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background-color: white;" data-name="laptop">
+                    <img src="images/Electronics/img-8.jpg" alt="Laptop">
+                    <div class="card-body">
+                        <h6>Laptop</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <div class="cart">
+                            <span class="price">₹ 78900</span>
+                            <button class="add-to-cart" data-id="20" data-name="Laptop" data-price="78900" data-image="images/Electronics/img-8.jpg">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="newsletter"class="section-p1 section-m1" >
+            <div class="newstext">
+                <h4>Sign Up For Newsletters</h4>
+                <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Your email address">
+                <button class="normal">Sign Up</button>
+            </div>
+        </section>
     </section>
-    <section id="page-header">
-        <h2>#Electronix</h2>
-        <p>Save more with coupens & up to 70% off!</p>
-    </section>
-    <section class="electronics" style="background-color: lightgray;" >
-        <div class="page-header">
-            <h1 >Electronics</h1>
-            <div class="filter-buttons">
-                <button data-name="all">All</button>
-                <button data-name="laptop">Laptop</button>
-                <button data-name="speaker">Speaker</button>
-                <button data-name="headphone">Headphone</button>
-            </div>
-            
-        </div>
-    
-        <div class="fiterable-cards">
-            <div class="card" style="background-color: white;" data-name="laptop" onclick="window.location.href='ESproduct.html'">
-                <img src="images/Electronics/img-1.jpg" alt="Laptop">
-                <div class="card-body">
-                    <h6>Laptop</h6>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <div class="cart">
-                        <span class="price">₹ 49999</span>
-                        <button>Add to cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card" style="background-color: white;" data-name="speaker">
-                <img src="images/Electronics/img-2.jpg" alt="Speaker">
-                <div class="card-body">
-                    <h6>Speaker</h6>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <div class="cart">
-                        <span class="price">₹ 5150</span>
-                        <button>Add to cart</button>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="card" style="background-color: white;" data-name="laptop">
-                <img src="images/Electronics/img-3.jpg" alt="Laptop">
-                <div class="card-body">
-                    <h6>Laptop</h6>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <div class="cart">
-                        <span class="price">₹ 152500</span>
-                        <button>Add to cart</button>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="card" style="background-color: white;" data-name="headphone">
-                <img src="images/Electronics/img-4.jpg" alt="Headphone">
-                <div class="card-body">
-                    <h6>Headphone</h6>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <div class="cart">
-                        <span class="price">₹ 4550</span>
-                        <button>Add to cart</button>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="card" style="background-color: white;" data-name="headphone">
-                <img src="images/Electronics/img-5.jpg" alt="Headphone">
-                <div class="card-body">
-                    <h6>Headphone</h6>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <div class="cart">
-                        <span class="price">₹ 2599</span>
-                        <button>Add to cart</button>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="card" style="background-color: white;" data-name="headphone">
-                <img src="images/Electronics/img-6.jpg" alt="Headphone">
-                <div class="card-body">
-                    <h6>Headphone</h6>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <div class="cart">
-                        <span class="price">₹ 3500</span>
-                        <button>Add to cart</button>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="card" style="background-color: white;" data-name="speaker">
-                <img src="images/Electronics/img-7.jpg" alt="Speaker">
-                <div class="card-body">
-                    <h6>Speaker</h6>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <div class="cart">
-                        <span class="price">₹ 4999</span>
-                        <button>Add to cart</button>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="card" style="background-color: white;" data-name="laptop">
-                <img src="images/Electronics/img-8.jpg" alt="Laptop">
-                <div class="card-body">
-                    <h6>Laptop</h6>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <div class="cart">
-                        <span class="price">₹ 78900</span>
-                        <button>Add to cart</button>
-                    </div>
-                </div>
-                
-            </div>
-    
-        </div>
-        
-    
-    
-    </section>
-    <section id="newsletter"class="section-p1 section-m1" >
-        <div class="newstext">
-            <h4>Sign Up For Newsletters</h4>
-            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
-        </div>
-        <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class="normal">Sign Up</button>
-        </div>
-    </section>
-</section>
     <footer class="section-p1">
         <div class="col">
             <img src="images/logo.png" class="logo" alt="">
