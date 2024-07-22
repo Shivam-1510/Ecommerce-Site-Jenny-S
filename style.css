@@ -129,6 +129,10 @@ body{
     display: none;
     align-items: center;
 }
+#moblie a{
+    position: relative;
+    z-index: 1000;
+}
 #close{
     display: none;
 }

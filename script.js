@@ -15,6 +15,14 @@ if(close){
 
 const filterButtons = document.querySelectorAll('.filter-buttons button')
 const fiterableCards = document.querySelectorAll('.fiterable-cards .card')
+const cartButton = document.querySelector('#mobile a');
+
+if (cartButton) {
+    cartButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.href = 'cart.html'; 
+    });
+}
 
 
 
