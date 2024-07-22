@@ -23,22 +23,13 @@ Each product is presented with an image, name, price, and a short description.
 Option to filter and sort products based on various criteria (e.g., price, popularity).
 
 **Product Details:**
-Detailed product pages with multiple images, detailed descriptions, and customer reviews.
+Detailed product pages with multiple images, detailed descriptions.
 Interactive elements such as image zoom and product variations (e.g., size, color).
 
 **Shopping Cart:**
 Users can add products to their shopping cart and view the cart at any time.
 Displays the selected items, their quantities, and the total price.
 Option to update quantities or remove items from the cart.
-
-**Checkout Process:**
-A streamlined checkout process with form validation for user information.
-Supports multiple payment options (e.g., credit card, PayPal).
-Confirmation page summarizing the order details.
-
-**User Accounts:**
-Registration and login functionality for users.
-Users can view their order history and manage their account details.
 
 **Responsive Design:**
 The site is fully responsive, ensuring it looks great on both desktop and mobile devices.
