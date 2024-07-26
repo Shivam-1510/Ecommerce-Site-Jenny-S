@@ -10,28 +10,26 @@ A visually appealing homepage with a modern design.
 Features a navigation bar for easy access to different sections of the site.
 Displays featured products and current promotions.
 
+**Cart Page:**
+Unique Product Identification: Each product added to the cart is assigned a unique identifier, ensuring no overlap even if product IDs are similar across different pages or categories.
+
+Real-Time Cart Management: Users can add, update quantities, and remove items directly from their cart, with changes reflected in real-time and stored persistently using localStorage.
+
+Dynamic Updates: The cart dynamically updates to show accurate quantities and subtotals, providing a seamless shopping experience across different pages and product categories.
+
 **Product Listings:**
 Organized product categories for easier browsing.
 Each product is presented with an image, name, price, and a short description.
 Option to filter and sort products based on various criteria (e.g., price, popularity).
 
 **Product Details:**
-Detailed product pages with multiple images, detailed descriptions, and customer reviews.
+Detailed product pages with multiple images, detailed descriptions.
 Interactive elements such as image zoom and product variations (e.g., size, color).
 
 **Shopping Cart:**
 Users can add products to their shopping cart and view the cart at any time.
 Displays the selected items, their quantities, and the total price.
 Option to update quantities or remove items from the cart.
-
-**Checkout Process:**
-A streamlined checkout process with form validation for user information.
-Supports multiple payment options (e.g., credit card, PayPal).
-Confirmation page summarizing the order details.
-
-**User Accounts:**
-Registration and login functionality for users.
-Users can view their order history and manage their account details.
 
 **Responsive Design:**
 The site is fully responsive, ensuring it looks great on both desktop and mobile devices.
