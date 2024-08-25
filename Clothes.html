@@ -11,7 +11,6 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8562ca9bc4.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0.0/fetch.min.js"></script>
 </head>
 <body><section>
     <section id="header">
@@ -50,25 +49,25 @@
             </div>
         </div>
         <div class="fiterable-cards">
-            <div class="card" style="background-color: white;" data-name="shirt" style="background-color: white;" onclick="window.location.href='Sproduct.html'" >
+            <div class="card" style="background-color: white;" data-id="1" data-name="shirt"  style="background-color: white;" onclick="window.location.href='Sproduct.html'" >
                 <img src="images/Products/f1.jpg" alt="shirt">
                 <div class="card-body">
                     <h6>Shirt</h6>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     <div class="cart">
                         <span class="price">₹ 864</span>
-                        <button>Add to cart</button>
+                        <button class="add-to-cart" data-id="1" data-name="Shirt"data-image="images/Products/f1.jpg" data-price="864">Add to cart</button>
                     </div>
                 </div>
             </div>
-            <div class="card" style="background-color: white;" data-name="pants">
-                <img src="images/Products/pants-2.webp" alt="pants">
+            <div class="card" style="background-color: white;" data-id="2" data-name="shirt">
+                <img src="images/Products/f4.jpg" alt="pants">
                 <div class="card-body">
-                    <h6>Pants</h6>
+                    <h6>Shirt</h6>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     <div class="cart">
                         <span class="price">₹ 864</span>
-                        <button>Add to cart</button>
+                        <button class="add-to-cart" data-id="2" data-image="images/Products/f4.jpg" data-name="Shirt" data-price="864">Add to cart</button>
                     </div>
                 </div>
             </div>
@@ -80,18 +79,18 @@
                     <div class="cart">
                         <span class="price">₹ 578
                         </span>
-                        <button>Add to cart</button>
+                        <button class="add-to-cart" data-id="3" data-name="Shirt" data-image="images/Products/f3.jpg" data-price="578">Add to cart</button>
                     </div>
                 </div>
             </div>
             <div class="card" style="background-color: white;" data-name="pants">
-                <img src="images/Products/pants-3.webp" alt="pants">
+                <img src="images/Products/n6.jpg" alt="pants">
                 <div class="card-body">
-                    <h6>Pants</h6>
+                    <h6>Pant</h6>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     <div class="cart">
                         <span class="price">₹ 786</span>
-                        <button>Add to cart</button>
+                        <button class="add-to-cart" data-id="4" data-image="images/Products/n6.jpg" data-name="Pant" data-price="786">Add to cart</button>
                     </div>
                 </div>
             </div>
@@ -102,30 +101,30 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     <div class="cart">
                         <span class="price">₹ 676</span>
-                        <button>Add to cart</button>
+                        <button class="add-to-cart" data-id="5" data-image="images/Products/f5.jpg" data-name="Shirt" data-price="676">Add to cart</button>
                     </div>
                 </div>
             </div>
             
-            <div class="card" style="background-color: white;" data-name="pants">
-                <img src="images/Products/pants-1.webp" alt="pants">
+            <div class="card" style="background-color: white;" data-name="shirt">
+                <img src="images/Products/n7.jpg" alt="pants">
                 <div class="card-body">
-                    <h6>Pants</h6>
+                    <h6>Shirt</h6>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     <div class="cart">
                         <span class="price">₹ 456</span>
-                        <button>Add to cart</button>
+                        <button class="add-to-cart" data-id="6" data-image="images/Products/n7.jpg" data-name="Pant" data-price="456">Add to cart</button>
                     </div>
                 </div>
             </div>
-            <div class="card" style="background-color: white;" data-name="tshirt">
+            <div class="card" style="background-color: white;" data-id="3" data-name="tshirt">
                 <img src="images/Products/tshirt-1.webp" alt="tshirt">
                 <div class="card-body">
                     <h6>T-Shirt</h6>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     <div class="cart">
                         <span class="price">₹ 863</span>
-                        <button>Add to cart</button>
+                        <button class="add-to-cart" data-id="7" data-image="images/Products/tshirt-1.webp" data-name="T-Shirt" data-price="863">Add to cart</button>
                     </div>
                 </div>
             </div>
@@ -136,7 +135,7 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     <div class="cart">
                         <span class="price">₹ 864</span>
-                        <button>Add to cart</button>
+                        <button class="add-to-cart" data-id="8" data-image="images/Products/tshirt-2.webp" data-name="T-Shirt" data-price="864">Add to cart</button>
                     </div>
                 </div>
             </div>
@@ -147,7 +146,7 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     <div class="cart">
                         <span class="price">₹ 354</span>
-                        <button>Add to cart</button>
+                        <button class="add-to-cart" data-id="9" data-image="images/Products/f2.jpg" data-name="Shirt" data-price="354">Add to cart</button>
                     </div>
                 </div>
             </div>
@@ -158,7 +157,7 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     <div class="cart">
                         <span class="price">₹ 864</span>
-                        <button>Add to cart</button>
+                        <button class="add-to-cart" data-id="10" data-image="images/Products/tshirt-3.webp" data-name="T-Shirt" data-price="864">Add to cart</button>
                     </div>
                 </div>
             </div>
@@ -169,7 +168,7 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     <div class="cart">
                         <span class="price">₹ 546</span>
-                        <button>Add to cart</button>
+                        <button class="add-to-cart" data-id="11" data-image="images/Products/tshirt-4.webp" data-name="T-Shirt" data-price="546">Add to cart</button>
                     </div>
                 </div>
             </div>
@@ -180,7 +179,7 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     <div class="cart">
                         <span class="price">₹ 556</span>
-                        <button>Add to cart</button>
+                        <button class="add-to-cart" data-id="12" data-image="images/Products/tshirt-5.webp" data-name="T-Shirt" data-price="556">Add to cart</button>
                     </div>
                 </div>
             </div>
@@ -244,8 +243,7 @@
             <img src="images/Pay/pay.png" alt="">
         </div>
         <div class="copyright">
-            <p>© 2024, Ecommerce-Site-Jenny-S
-            </p>
+            <p>© 2024, Tech2 ete - HTML CSS Ecommerce Template</p>
         </div>
     </footer>
 </body>

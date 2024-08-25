@@ -9,15 +9,6 @@
     text-decoration: none;
     font-family: "Poppins", "sans-serif";
 }
-/* Using vendor prefixes for border-radius */
-.example {
-    -webkit-border-radius: 10px; /* Safari, Chrome */
-    -moz-border-radius: 10px;    /* Firefox */
-    -ms-border-radius: 10px;     /* Internet Explorer */
-    -o-border-radius: 10px;      /* Older Opera */
-    border-radius: 10px;         /* Standard */
-  }
-  
 :root {
     --bg-color: #ffffff;
     --text-color: black;
@@ -137,6 +128,10 @@ body{
 #mobile{
     display: none;
     align-items: center;
+}
+#moblie a{
+    position: relative;
+    z-index: 1000;
 }
 #close{
     display: none;

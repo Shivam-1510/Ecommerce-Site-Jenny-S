@@ -11,7 +11,6 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8562ca9bc4.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0.0/fetch.min.js"></script>
 </head>
 <body>
     <section id="header">
@@ -37,7 +36,6 @@
     <section id="page-header" class="about-header">
         <h2>#Lets's_Shop</h2>
         <p>We are happy to serve you! </p>
-
     </section>
     <section id="cart" class="section-p1">
         <table width="100%">
@@ -52,30 +50,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><i class="far fa-times-circle"></i></td>
-                    <td><img src="images/Products/f1.jpg" alt=""></td>
-                    <td>Shirt</td>
-                    <td>₹ 864</td>
-                    <td><input type="number" value="1"></td>
-                    <td>₹ 864</td>
-                </tr>
-                <tr>
-                    <td><i class="far fa-times-circle"></i></td>
-                    <td><img src="images/Electronics/img-5.jpg" alt=""></td>
-                    <td>Headphone</td>
-                    <td>₹ 2599</td>
-                    <td><input type="number" value="1"></td>
-                    <td>₹ 2599</td>
-                </tr>
-                <tr>
-                    <td><i class="far fa-times-circle"></i></td>
-                    <td><img src="images/Furniture/chair-1.jpg" alt=""></td>
-                    <td>Chair</td>
-                    <td>₹ 1999</td>
-                    <td><input type="number" value="1"></td>
-                    <td>₹ 1999</td>
-                </tr>
+                <!-- Cart items will be dynamically inserted here -->
             </tbody>
         </table>
     </section>
@@ -91,16 +66,8 @@
             <h3>Cart Totals</h3>
             <table>
                 <tr>
-                    <td>Cart Subtotal</td>
-                    <td>₹ 5462</td>
-                </tr>
-                <tr>
-                    <td>Shipping</td>
-                    <td>Free</td>
-                </tr>
-                <tr>
-                    <td><strong>Total</strong></td>
-                    <td><strong>₹ 5462</strong></td>
+                    <td><strong>Cart Subtotal</strong></td>
+                    <td><strong>₹ 0</strong></td>
                 </tr>
             </table>
             <button class="normal">Proceed to Checkout</button>
@@ -151,11 +118,8 @@
             <img src="images/Pay/pay.png" alt="">
         </div>
         <div class="copyright">
-            <p>© 2024, Ecommerce-Site-Jenny-S
-            </p>
+            <p>© 2024, Tech2 ete - HTML CSS Ecommerce Template</p>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
-</html>
